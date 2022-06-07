@@ -28,6 +28,9 @@
         }
         .mobile-menu{
             padding: 24px;
+            display: flex;
+            flex-direction: column;
+            
         } 
         .mobile-menu a{
             text-decoration: none;
@@ -42,16 +45,18 @@
         }
         .mobile-menu ul:nth-child(1){ /*Borde*/
             border-bottom: 1px solid var(--very-light-pink);
+            
         }
         .mobile-menu ul li{
  
             margin-bottom: 24px;
         }
         .mobile-menu ul:last-child{
- 
-            justify-content: space-between;
+            /*Posicionamos esta sección en la parte de abajo*/
+            position: absolute;
+            bottom: 10%;
         }
-        .mobile-menu :last-child li{
+        .mobile-menu :last-child li{ /*Quita el espacio entre el correo y el signout*/
  
             margin-bottom: 0px;
         }
@@ -65,7 +70,7 @@
             font-size: 12px;
             
         }
-
+       
 
     </style>
 </head>
